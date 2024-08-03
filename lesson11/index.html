@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lesson 11</title>
+  </head>
+  <body>
+    <div class="form_1">
+      <form autocomplete="on">
+        <label for="text">Type something</label>
+        <input value="some text" type="text" name="text" id="text" />
+        <label>
+          Some random input
+          <input value="random" type="text2" name="text2" id="text" />
+        </label>
+        <select name="select" id="select">
+          <option value="one">Some option</option>
+          <option value="two">Some option</option>
+          <option value="three">Some option</option>
+        </select>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <textarea name="textarea" id="textarea" cols="20" rows="10">
+            Some text
+        </textarea>
+      </form>
+    </div>
+    <div class="form_2">
+      <form>
+        <fieldset>
+          <legend>Two inputs</legend>
+          <label>
+            Some new input
+            <input type="text" name="input" id="input" />
+          </label>
+          <label>
+            Some new input2
+            <input type="text" name="input2" id="input2" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Input and select</legend>
+          <label>
+            Some new input3
+            <input type="text" name="input3" id="input3" />
+          </label>
+          <select name="select" id="select">
+            <option value="one">Some option</option>
+            <option value="two">Some option</option>
+            <option value="three">Some option</option>
+          </select>
+        </fieldset>
+        <button type="button">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+  </body>
+</html>
