@@ -1,0 +1,28 @@
+h1 {
+    color: blue;
+}
+
+.block {
+    color: skyblue;
+}
+
+#block {
+    color: tomato;
+}
+
+.block2 {
+    color: deeppink !important;
+}
+
+[class] {
+    color: gold;
+}
+
+h2.block3 {
+    color: violet;
+}
+
+.block3 {
+    color: orange;
+}
+
