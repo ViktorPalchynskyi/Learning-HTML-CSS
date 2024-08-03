@@ -1,0 +1,32 @@
+div {
+    color: tomato;
+}
+
+.parent {
+    color: aqua;
+    border: 1px solid #000;
+}
+
+#div1 {
+    color: coral;
+}
+
+.block4 {
+    color: gold;
+}
+
+.block {
+    color: darkcyan;
+}
+
+div.blue-block {
+    color: deepskyblue;
+}
+
+div .orange {
+    color: orange;
+}
+
+.parent-1>.child-1 {
+    color: darkblue;
+}
