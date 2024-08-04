@@ -1,0 +1,45 @@
+.greet__title {
+    font-size: 5rem;
+    margin-bottom: 50px;
+}
+
+.greet__text {
+    font-size: 2rem;
+    line-height: 150%;
+    margin-bottom: 50px;
+}
+
+@font-face {
+    font-family: 'Antipasto Pro';
+    font-weight: 400;
+    src:
+        local('Antipasto Pro Regular'),
+        local('AntipastoPro-Regular'),
+        url('./fonts/AnyConv.com__AntipastoPro-Regular.woff2') format("woff2"),
+        url('./fonts/AntipastoPro-Regular.woff') format("woff"),
+        url('./fonts/AntipastoPro-Regular.eot') format("eot");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Antipasto Pro';
+    font-weight: 800;
+    src:
+        local('Antipasto Pro ExtraBold'),
+        local('AntipastoPro-ExtraBold'),
+        url('./fonts/AnyConv.com__AntipastoPro-ExtraBold.woff2') format("woff2"),
+        url('./fonts/AntipastoPro-ExtraBold.woff') format("woff"),
+        url('./fonts/AntipastoPro-ExtraBold.eot') format("eot");
+    font-style: normal;
+    font-display: swap;
+}
+
+.greet__text-1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+}
+
+.greet__text-2 {
+    font-family: "Antipasto Pro", sans-serif;
+}
