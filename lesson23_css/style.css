@@ -1,0 +1,24 @@
+.wrapper {
+    padding: 100px 100px 30vh;
+    height: 100vh;
+  }
+  
+  .block {
+    height: 100%;
+    box-shadow: 0 0 10px rgb(83, 83, 83);
+    border-radius: 5px;
+  }
+  
+  /* -------------------------------------------------------- */
+
+  .block {
+    /* background: #444; */
+    /* background: linear-gradient(15deg, skyblue, coral); */
+    /* background: radial-gradient(skyblue, coral); */
+
+    background: url('./images/dog.jpg') 0 0 / auto no-repeat, url('./images/laptop.jpg') 100% 0 / auto 300px no-repeat, skyblue;
+    /* background-position: 50px 150px; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: contain; */
+}
