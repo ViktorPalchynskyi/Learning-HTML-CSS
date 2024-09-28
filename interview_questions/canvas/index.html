@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #canvas {
+        border: 1px solid coral;
+      }
+
+      #svg {
+        fill: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="500" height="400"></canvas>
+    <svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+      <rect id="svg" x="20" y="20" width="150" height="100" />
+      <circle cx="240" cy="70" r="50" fill="red" />
+    </svg>
+  </body>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d"); // Получаем контекст рисования
+
+    // Рисуем прямоугольник
+    context.fillStyle = "blue";
+    context.fillRect(20, 20, 150, 100);
+
+    // Рисуем круг
+    context.beginPath();
+    context.arc(240, 70, 50, 0, Math.PI * 2);
+    context.fillStyle = "red";
+    context.fill();
+  </script>
+</html>
