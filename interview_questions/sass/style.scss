@@ -13,6 +13,13 @@ $font-size: 16px;
   align-items: center;
 }
 
+@mixin border-radius(@radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
 body {
   font-style: $font-size;
   color: $primary-color;
@@ -53,4 +60,3 @@ nav {
   @extend .button;
   background-color: darken($primary-color, 10%);
 }
-
