@@ -1,17 +1,22 @@
 $primary-color: #3498db;
 $font-size: 16px;
 
-@import 'header';
+@import "header";
+
+@function calculate-rem($size-px) {
+  @return $size-px / 16px * 1rem;
+}
 
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
   font-style: $font-size;
   color: $primary-color;
+  font-size: calculate-rem(18px);
 }
 
 nav {
@@ -30,11 +35,22 @@ nav {
 }
 
 .container {
-    @include flex-center;
+  @include flex-center;
 }
 
 @for $i from 1 through 3 {
-    .column-#{$i} {
-        width: 100% / $i;
-    }
+  .column-#{$i} {
+    width: 100% / $i;
+  }
 }
+
+.button {
+  padding: 10px 20px;
+  background-color: $primary-color;
+}
+
+.primary-button {
+  @extend .button;
+  background-color: darken($primary-color, 10%);
+}
+
