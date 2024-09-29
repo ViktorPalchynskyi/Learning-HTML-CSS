@@ -1,6 +1,12 @@
 $primary-color: #3498db;
 $font-size: 16px;
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body {
   font-style: $font-size;
   color: $primary-color;
@@ -19,4 +25,14 @@ nav {
     text-decoration: none;
     color: $primary-color;
   }
+}
+
+.container {
+    @include flex-center;
+}
+
+@for $i from 1 through 3 {
+    .column-#{$i} {
+        width: 100% / $i;
+    }
 }
